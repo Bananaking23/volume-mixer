@@ -1,0 +1,119 @@
+{
+  "meta": {
+    "version": 2
+  },
+  "hardware": {
+    "profile": "SuperMini (SDA=8 / SCL=9)",
+    "slider_pins": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "button_pins": [
+      10,
+      20
+    ],
+    "oled_sda": 8,
+    "oled_scl": 9,
+    "oled_address": "0x3C",
+    "oled_rotation": "0 degrees",
+    "led_strip": {
+      "enabled": true,
+      "data_pin": 5,
+      "led_count": 2,
+      "brightness": 64,
+      "mode": "Rainbow cycle",
+      "low_color": "#00FF00",
+      "high_color": "#FF0000"
+    },
+    "board_fqbn": "esp32:esp32:esp32c3",
+    "baud_rate": 115200,
+    "com_port": "COM7",
+    "arduino_cli_path": "C:/Users/chris/Downloads/CydDesigner/CydDesigner/bin/Debug/net8.0-windows/arduino-cli.exe"
+  },
+  "channels": [
+    {
+      "name": "Channel 1",
+      "label": "CH1",
+      "invert": false,
+      "adc_min": 0,
+      "adc_max": 4095,
+      "visible": true,
+      "style": "Bar"
+    },
+    {
+      "name": "Channel 2",
+      "label": "CH2",
+      "invert": false,
+      "adc_min": 0,
+      "adc_max": 4095,
+      "visible": true,
+      "style": "Bar"
+    },
+    {
+      "name": "Channel 3",
+      "label": "CH3",
+      "invert": false,
+      "adc_min": 0,
+      "adc_max": 4095,
+      "visible": true,
+      "style": "Bar"
+    },
+    {
+      "name": "Channel 4",
+      "label": "CH4",
+      "invert": false,
+      "adc_min": 0,
+      "adc_max": 4095,
+      "visible": true,
+      "style": "Bar"
+    },
+    {
+      "name": "Channel 5",
+      "label": "CH5",
+      "invert": false,
+      "adc_min": 0,
+      "adc_max": 4095,
+      "visible": true,
+      "style": "Bar"
+    }
+  ],
+  "button_actions": [
+    {
+      "action": "ToggleScreen",
+      "trigger": "On press",
+      "custom": ""
+    },
+    {
+      "action": "MuteAll",
+      "trigger": "On press",
+      "custom": ""
+    }
+  ],
+  "oled_designer": {
+    "title": "Audio Mixer",
+    "footer": "deej",
+    "show_title": true,
+    "show_footer": true,
+    "show_status": true,
+    "show_labels": true,
+    "layout": "Meters",
+    "meter_style": "Vertical",
+    "widget_layout": "Five channels",
+    "show_master": false,
+    "show_mute_indicator": true,
+    "show_peak_indicator": false,
+    "show_numeric_values": true
+  },
+  "firmware": {
+    "smoothing": 0.2,
+    "update_interval_ms": 30
+  },
+  "appearance": {
+    "theme": "dark",
+    "accent": "#4C9AFF",
+    "preview_bg": "#1B1F24"
+  }
+}
